@@ -21,7 +21,7 @@ async def main():
     """Main function to run the bot."""
     # Validate config
     if not config.BOT_TOKEN:
-        logger.error("BOT_TOKEN is not set in .env file!")
+        logger.error("BOT_TOKEN is not set! Please set it in environment variables or .env file!")
         return
 
     # Initialize database

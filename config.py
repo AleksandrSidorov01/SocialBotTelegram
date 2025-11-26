@@ -3,7 +3,9 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-load_dotenv()
+# Load .env file if it exists (for local development)
+# override=False ensures that existing environment variables (like Railway) take precedence
+load_dotenv(override=False)
 
 # Project root directory
 BASE_DIR = Path(__file__).parent
