@@ -39,7 +39,7 @@ class Config:
 
     # Pet Stats (starting values)
     MAX_STAT_VALUE = 100
-    STAT_DECAY_PER_TICK = 5  # How much each stat decreases per tick
+    STAT_DECAY_PER_TICK = int(os.getenv("STAT_DECAY_PER_TICK", "5"))  # How much each stat decreases per tick
 
     # Bad words filter (basic list - can be expanded)
     BAD_WORDS = [
